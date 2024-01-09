@@ -122,7 +122,6 @@ function listFactory(){
             let previous = null;
             if(this.listHead === null) return 'list is empty';
             for(let i = 0; i < index - 1; i++){
-                console.log('itteration');
                 node = node.nextNode;
                 if(node === null) return;
             };
@@ -134,8 +133,3 @@ function listFactory(){
     };
 };
 const theList = listFactory();
-theList.append(10);
-theList.append(30);
-theList.append(40);
-theList.remove(2);
-console.log(theList.toString());
